@@ -1,0 +1,28 @@
+﻿@model StudentInsertMVC.Models.tblStudent
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>StudRegistration</title>
+</head>
+
+<body>
+    <h1>Student Registration Form</h1>
+    <div>
+        @* using only beginForm() *@
+        @using (Html.BeginForm())
+        {
+            @Html.LabelFor(x => x.Id) @Html.TextBoxFor(Model => Model.Id)<br />
+            @Html.LabelFor(x => x.name) @Html.TextBoxFor(Model => Model.name)<br />
+            <input type="submit" value="save" /><br />
+
+        }
+
+    </div>
+</body>
+</html>
