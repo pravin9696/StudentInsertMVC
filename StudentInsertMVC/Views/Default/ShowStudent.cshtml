@@ -1,0 +1,20 @@
+﻿@model StudentInsertMVC.Models.tblStudent
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowStudent</title>
+</head>
+<body>
+    <div> 
+        @Html.TextBoxFor(x=>x.Id)
+        <br />
+        @Html.TextBoxFor(x=>x.name)
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿@model StudentInsertMVC.Models.Lang
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>LoginFor</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <h3>select languages</h3>
+            @*@Html.CheckBox("Hindi", false)@Html.Label("Hindi")<br />*@
+            @Html.CheckBoxFor(x => x.hindi)@Html.DisplayNameFor(x => x.hindi)<br />
+            @Html.CheckBoxFor(x => x.marathi)@Html.DisplayNameFor(x => x.marathi)<br />
+            @Html.CheckBoxFor(x => x.english)@Html.DisplayNameFor(x => x.english)<br />
+
+
+            <input type="submit" value="submit" />
+        }
+    </div>
+</body>
+</html>

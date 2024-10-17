@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        <h1>login</h1>
+        @using (Html.BeginForm())
+        {
+            <h3>select languages</h3>
+            @Html.CheckBox("Hindi", false)@Html.Label("Hindi")<br />
+            @Html.CheckBox("Marathi")@Html.Label("Marathi")<br />
+            @Html.CheckBox("English", true)@Html.Label("English")<br />
+
+            <h4>select Gender</h4>
+            @Html.RadioButton("gender", "Male")@Html.Label("male")<br />
+            @Html.RadioButton("gender", "FeMale")@Html.Label("female")<br />
+            <input type="submit" value="submit" />
+        }
+    </div>
+</body>
+</html>

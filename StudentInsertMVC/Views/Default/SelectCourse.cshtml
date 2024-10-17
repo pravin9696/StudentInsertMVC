@@ -1,0 +1,25 @@
+﻿@model StudentInsertMVC.Models.CourseList
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SelectCourse</title>
+</head>
+<body>
+    <div> 
+        @using (Html.BeginForm())
+        {
+            for (int i = 0; i < Model.coursesList.Count(); i++)
+            {
+                @Html.RadioButtonFor(x => x.selectedCourseId, Model.coursesList[i].Id)@Html.DisplayFor(x=>Model.coursesList[i].name)<br />
+            }
+            <input type="submit"value="submit" />
+        }
+    </div>
+</body>
+</html>

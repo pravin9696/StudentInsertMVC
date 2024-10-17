@@ -111,10 +111,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\Lang.cs" />
     <Compile Include="Models\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -147,6 +150,12 @@
     <None Include="packages.config" />
     <Content Include="Views\Student\StudRegistration.cshtml" />
     <Content Include="Views\Student\studInsert.cshtml" />
+    <Content Include="Views\Default\Login.cshtml" />
+    <Content Include="Views\Default\Singup.cshtml" />
+    <Content Include="Views\Student\XYZ.cshtml" />
+    <Content Include="Views\Default\ShowStudent.cshtml" />
+    <Content Include="Views\Default\LoginFor.cshtml" />
+    <Content Include="Views\Default\SelectCourse.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

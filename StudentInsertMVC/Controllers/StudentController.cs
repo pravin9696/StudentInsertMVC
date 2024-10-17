@@ -11,6 +11,16 @@ namespace StudentInsertMVC.Controllers
 {
     public class StudentController : Controller
     {
+        [HttpGet]
+        public ActionResult Mystudent(tblStudent ts)
+        {
+
+            return View();
+        }
+        public ActionResult XYZ()
+        {
+            return View();
+        }
         public ActionResult studInsert()
         {
             return View();
